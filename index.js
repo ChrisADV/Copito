@@ -56,8 +56,10 @@ client.on("ready", () => {
 });
 
 client.on("message", message => {
-    if (message.body === "Hello") {
-        client.sendMessage(message.from, 'World!');
+    if (message.body === "!ip") {
+        client.sendMessage(message.from, '```La Ip y el Puerto del servidor es:```
+                           *IP:* PokeMcMon.aternos.me
+                           *Puerto:* 39441 ');
     }
 });
 
